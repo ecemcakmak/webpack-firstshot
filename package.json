@@ -2,9 +2,11 @@
   "name": "webpack-firstshot",
   "version": "1.0.0",
   "description": "",
-  "private": true,
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack --mode development",
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development --open"
   },
   "repository": {
     "type": "git",
@@ -18,11 +20,10 @@
   },
   "homepage": "https://github.com/ecemcakmak/webpack-firstshot#readme",
   "devDependencies": {
-    "html-webpack-plugin": "^5.5.0",
-    "webpack": "^5.70.0",
-    "webpack-cli": "^4.9.2"
-  },
-  "dependencies": {
-    "lodash": "^4.17.21"
+    "install": "^0.13.0",
+    "npm": "^8.6.0",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1"
   }
 }
